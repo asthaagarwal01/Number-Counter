@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Countdown
+        </title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="box">
+            <h2>COUNTER</h2>
+            <p id="number"></p>
+            <button onclick="lower()">Lower Count</button>
+            <button onclick="add()">Add Count</button>
+        </div>
+
+       
+<script type="text/javascript">
+    var data = 8;
+        
+        
+        document.getElementById("number").innerText = data;
+        
+       
+        function add() {
+            if(data<=11)
+            {
+                data = data + 1;
+                document.getElementById("number").innerText = data;
+            }
+            else
+            document.getElementById("number").innerText = data;
+           
+        }
+        
+        function lower() {
+            if(data>=-1)
+            {
+                data = data - 1;
+                document.getElementById("number").innerText = data;
+            }
+            else
+            document.getElementById("number").innerText = data;
+        }
+        
+</script>
+        
+        
+    </body>
+</html>
